@@ -1,0 +1,32 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    gap: 8px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.day {
+    width: 40px;
+    height: 40px;
+    background: #444;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.day.completed {
+    background: #00ff88;
+}
+
+.insights {
+    margin-top: 20px;
+}
